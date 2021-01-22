@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<head>
+    <style>
+        .kapsul
+        {
+            position:absolute;
+            width:55%;
+            height:95%;
+        }
+        .baslik{
+            position: absolute;
+            top: 0%;
+            left: 40%;
+        }
+        .asd
+        {
+            background-color: #ff0000;
+            color: white;
+            opacity:0.6;
+        }
+        .dsa
+        {
+            position:absolute;
+            top:10%;
+            right:0;
+            width:100%;
+        }
+        .alt{
+            position: absolute;
+            top:45%;
+            width:100%;
+        }
+        .qwe{
+            position: absolute;
+            top:30%;
+            width:100%;
+            height:1%;
+            background-color:black;
+        }
+        .qwe2 {
+            position: absolute;
+            top: 40%;
+            width: 100%;
+            height: 1%;
+            background-color: black;
+        }
+    </style>
+</head>
+<div class="kapsul">
+
+    <div class="baslik">
+        <h1>SÜPERMARKET</h1>
+    </div>
+
+    <div class="dsa">
+        <marquee> <img height="100px" src="~/img/burcak.jpg" /> <img height="100px" src="~/img/biskuvi.jpg" /></marquee>
+    </div>
+
+    <div class="qwe">
+        <hr />
+        Market listesine ulaşmak için <a href="/Market/Liste">tıklayınız.</a>
+    </div>
+    <div class="qwe2">
+        <hr />
+    </div>
+    <div class="alt">
+        <marquee class="asd">ÜRÜNLERİMİZ SAĞLIK BAKANLIĞI TARAFINDAN HER HAFTA DÜZENLİ DENETLENMEKTEDİR</marquee>
+    </div>
+</div>

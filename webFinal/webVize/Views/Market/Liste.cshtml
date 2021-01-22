@@ -1,0 +1,44 @@
+﻿@model IEnumerable<webVize.Models.Market>
+
+@{
+    ViewBag.Title = "Liste";
+}
+<br />
+<br>
+<p>
+    @Html.ActionLink("Yeni Oluştur", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fiyat)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Id)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Ad)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Fiyat)
+    </td>
+    <td>
+        @Html.ActionLink("Düzenle", "Edit", new { Id = item.Id }) |
+        @Html.ActionLink("Detaylar", "Details", new { /* id=item.PrimaryKey */ }) |
+        @Html.ActionLink("Sil", "Delete", new { Id = item.Id })
+    </td>
+</tr>
+}
+
+</table>
